@@ -2,21 +2,35 @@
 <div
   style="
     display: flex;
-    justify-content: center;   /* center the pair */
     align-items: center;
-    gap: 0;                    /* no gap between them */
+    justify-content: flex-start;
+    gap: 12px;
+    flex-wrap: wrap;       /* stacks nicely on small screens */
   "
 >
-  <img
+  <!-- IMAGE ON LEFT -->
+  <div style="flex: 0 0 auto;">   
+<img
   src="RightF.png"
   alt="Right image"
   style="display: block; width: 50px; height: auto;"
 >
-<img
-  src="LeftF.png"
-  alt="Left image"
-  style="display: block; width: 50px; height: auto;"
->
+  </div>
+
+  <!-- TEXT ON RIGHT -->
+  <div
+    style="
+      flex: 0 1 auto;
+      text-align: left;
+      min-width: 140px;
+    "
+  >
+    <div style="font-size: 22px; font-weight: bold; line-height: 1.2;">
+      Reflective<br>
+      Genesis<br>
+      Hypothesis
+    </div>
+  </div>
 </div>
 </div>
   <!-- TOP HEADER BAND -->
